@@ -34,7 +34,7 @@ function parallelLimit(urls: string[], limit: number, callback: (res?: IPlanet) 
   const dataCash: ICashRecord[] = [];
 
   let a = 0;
-  // Выполняем запроc каждой группе url
+  // Выполняем запроc по каждой группе urls
   (async (list) => {
     for await (const group of list) {
       console.log('\nGroup', ++a);
